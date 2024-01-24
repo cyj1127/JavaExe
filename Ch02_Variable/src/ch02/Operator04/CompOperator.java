@@ -12,8 +12,7 @@ public class CompOperator {
 		System.out.println(bVal);
 		bVal = num0 == num1;
 		System.out.println(bVal);
-	    bVal = num0 >= num2;
-	    System.out.println(bVal);
+	    
 	}
 
 }
