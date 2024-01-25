@@ -8,6 +8,7 @@ public class ForEx1 {
 		// 시작;끝;변화량
 		for(int i=1;i<=10;i++) {
 			System.out.println(i);	// 실행
+			System.out.println();
 		}
 	}
 
