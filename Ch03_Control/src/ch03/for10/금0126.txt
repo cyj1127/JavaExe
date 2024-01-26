@@ -1,0 +1,8 @@
+1.boolean 개념
+2.println,printf,print 차이
+3.while문 응용(129p)
+4.조건연산자 개념(103p)
+5.while(true)개념
+boolean isRun 개념 (Resolve15)
+배열 개념숙지
+얕은 복사/ 깊은 복사

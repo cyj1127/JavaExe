@@ -7,8 +7,7 @@ public class Resolve12 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		System.out.println("정수를 입력하시오");
-		int num;
-		num = sc.nextInt();
+		int num = sc.nextInt();
 		
 		String thx = "감사합니다";	
 		
