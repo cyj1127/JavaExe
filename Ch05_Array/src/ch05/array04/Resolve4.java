@@ -7,10 +7,15 @@ import java.util.Arrays;
 //그리고 거꾸로 출력하세요.
 public class Resolve4 {
 	public static void main(String[] args) {
-		int num = new int[10];
+		int[] num = new int[10];
 		
-		for(int i=1;i<num;i++) {
-			
+		for(int i=1;i<num.length;i++) {
+			num[i] = 3*(i+1);
+		}
+		System.out.println(Arrays.toString(num));
+		
+		for(int i=num.length; i>=0;i--){
+			System.out.print(num[i] +",");
 		}
 	}
 }

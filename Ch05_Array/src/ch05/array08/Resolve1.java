@@ -10,6 +10,9 @@ public class Resolve1 {
 
 		Arrays.sort(num);
 		System.out.println(Arrays.toString(num));
+		
+		System.out.println("최소값: " + num[0]);
+		System.out.println("최대값: " + num[num.length-1]);
 	}
 
 }

@@ -5,6 +5,12 @@ public class Resolve2 {
 	public static void main(String[] args) {
 		String [] names = {"일번","이번","삼번","사번","오번","육번",
 				"칠번","팔번","구번","십번"};
+		
+		System.out.println(names.length);
+		for(int i=names.length-1; i>=0;i--) {
+			System.out.print(names[i] + ", ");
+		}
+		System.out.println();
 	}
 
 }

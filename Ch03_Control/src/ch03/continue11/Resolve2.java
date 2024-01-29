@@ -3,12 +3,13 @@ package ch03.continue11;
 
 public class Resolve2 {
 	public static void main(String[] args) {
-		String star = "*";
-		while(true)
-		for (int i = 1; i <= 5; i++) 
-			System.out.println(star);
-		if(i>=6);	
-		break;
+		for (int i = 1; i <= 5; i++) {
+			for(int j=0;j<i;j++) {			
+				System.out.print("*");
+			}
+			System.out.println();
+		}
+
 		}
 	}
 
