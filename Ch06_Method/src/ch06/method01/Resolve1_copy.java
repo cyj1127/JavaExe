@@ -5,27 +5,35 @@ package ch06.method01;
 
 import java.util.Scanner;
 
-public class Resolve1 {
+public class Resolve1_copy {
 
-	public static void minnum(int num0, int num1) {
+	public static int minnum(int num0, int num1) {
 		int result = 0;
 		if (num0 < num1)
 			result = num0;
 		else
 			result = num1;	
-		System.out.println("최소값: " + result);
-
+		return result;
 }
 		
 
-	public static void maxnum(int num0, int num1) {
+	public static int maxnum(int num0, int num1) {
 		int result = 0;
 		if (num0 < num1)
 			result = num1;
 		else
 			result = num0;	
-		System.out.println("최대값: " + result);
+		return result;			
 		}
+	
+
+	public static void ArithResult(int result0) {
+		System.out.println("작은 값은: " + result0);
+	}
+
+	public static void ArithResult1(int result1) {
+		System.out.println("큰 값은: " + result1);
+	}
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
@@ -34,9 +42,11 @@ public class Resolve1 {
 		System.out.println("두 번째 정수 입력");
 		int num1 = sc.nextInt();
 
-		minnum(num0, num1);
-		maxnum(num0, num1);
-		
+		int result = minnum(num0, num1);
+		int result1 = maxnum(num0, num1);
+		ArithResult(result);
+		ArithResult1(result1);
+
 		sc.close();
 	}
 }

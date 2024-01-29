@@ -8,19 +8,20 @@ import java.util.Scanner;
 public class Resolve4 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-				System.out.println("단을 입력하세요 >>");
+				System.out.print("단을 입력하세요 >>");
 				int dan = sc.nextInt();
 		
-				int result = gugudan(dan);
-				System.out.println(result);				
+			gugudan(dan);
+							
 		sc.close();
 	}
 	public static void gugudan(int num0) {
-		for(int i=num0;i<=9;i++) {
-			for(int j=1;j<=9;j++) { 	
-			System.out.println(num0+"x"+j+"="+(i*j));
+				for(int i=num0;i<=9;) {
+			for(int j=1;j<=9;j++) {
 			
-			}
+			System.out.println(i+"x"+j+"="+(i*j));
+						}
+			return;
+			}		
 		}
-}
 }

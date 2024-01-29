@@ -26,7 +26,7 @@ public class Resolve3 {
 	public static int total(int num0, int num1) {
 		int sum = 0;
 		for (int i=num0; i <= num1; i++) {
-			sum = sum+i;//num0 + num1;
+			sum = sum+i;//sum  sum + i;  , 10 ,100
 		}
 		return sum;
 	}
