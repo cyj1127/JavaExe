@@ -16,7 +16,7 @@ public class Human {
 	private int age;
 	private double score;
 	
-	//Setter
+	//Setter //필드로 가지못하게 막는 경비원 같은 역할
 	public void setName(String _name) {
 		name = _name;
 	}
@@ -31,7 +31,7 @@ public class Human {
 		score = _score;
 	}
 	
-	//Getter
+	//Getter //사용자에게 원본이 아닌 복사본을 볼 수 있게 해주는 역할
 	public String getName( ) {
 		return name;
 	}
