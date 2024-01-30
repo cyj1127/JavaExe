@@ -21,7 +21,6 @@ public class Resolve4 {
 			
 			System.out.println(i+"x"+j+"="+(i*j));
 						}
-			return;
 			}		
 		}
 }

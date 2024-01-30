@@ -31,6 +31,5 @@ public class Resolve5 {
 			}
 			System.out.println();
 		}
-		return;
 	}
 }

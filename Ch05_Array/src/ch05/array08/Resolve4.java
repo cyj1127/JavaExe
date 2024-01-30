@@ -6,7 +6,7 @@ package ch05.array08;
  */
 public class Resolve4 {
 	public static void main(String[] args) {
-		int[] numArr = { 10, 7, 21, 48, 33 };
+		int[] numArr = {  10, 7, 21, 48, 33 };
 		
 		
 	}
