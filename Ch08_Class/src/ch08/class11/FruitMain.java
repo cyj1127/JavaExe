@@ -1,4 +1,4 @@
-package ch08.class08;
+package ch08.class11;
 
 
 public class FruitMain {

@@ -1,4 +1,4 @@
-package ch08.class08;
+package ch08.class11;
 
 public class FruitBuyer {
 	private int money;
@@ -8,7 +8,6 @@ public class FruitBuyer {
 	public FruitBuyer(int money) {		
 		this.money = money;
 		this.numOfApple = 0;
-		this.buyApple = 
 	}
 	public void buyApple(FruitSeller seller, int money) {
 		//this.numOfApple += seller.saleApple(money);
