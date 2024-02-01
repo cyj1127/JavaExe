@@ -1,12 +1,11 @@
-package ch09.iskindof06;
+package ch09.hasa08;
 
 public class NursePolice extends Police{
 	
 	private int thermometers;	// 체온계 개수
 	
-	public NursePolice(int bullet, 
-			int handCuffs, int thermometers) {
-		super(bullet, handCuffs);
+	public NursePolice(int clothes, int thermometers) {
+		super(clothes);
 		this.thermometers = thermometers;
 	}
 	public void calcThermometer() {

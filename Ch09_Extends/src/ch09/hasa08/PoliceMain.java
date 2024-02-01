@@ -1,4 +1,4 @@
-package ch09.iskindof06;
+package ch09.hasa08;
 
 /* 상속을 할 때는 고려해야 할 것이 있다.
  * 1) 부모로 정할 클래스와 자식 클래스간에 
@@ -16,17 +16,13 @@ package ch09.iskindof06;
  * */
 public class PoliceMain {
 	public static void main(String[] args) {
-		ForcePolice fp = new ForcePolice(10, 5);
+		ForcePolice fp = new ForcePolice(3, 5,5);
 		fp.run();			// 달린다
 		fp.fight();			// 싸운다
 		fp.shot();			// 총을 쏴서 위협
-		fp.putHandCuff();	// 수갑을 채운다
+		fp.putOnHandCuffs();	// 수갑을 채운다
 		
-		NursePolice np = new NursePolice(10, 5, 3);
+		NursePolice np = new NursePolice(5, 7);
 		np.calcThermometer(); 	// 온도를 측정
-		np.putHandCuff(); 		// 수갑을 채운다
-		np.shot(); 				// 빵!
-		np.shot(); 				// 빵!
-		np.shot(); 				// 빵!
 	}
 }

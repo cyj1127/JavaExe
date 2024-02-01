@@ -3,7 +3,7 @@ package ch09.resolve07;
 public class Mul {
 	int a, b;
 
-	public void Mul1(int a, int b) {
+	public Mul(int a, int b) {
 		this.a = a;
 		this.b = b;
 	}

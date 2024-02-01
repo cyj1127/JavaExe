@@ -3,7 +3,7 @@ package ch09.resolve07;
 public class Div {
 	int a, b;
 
-	public void Div1(int a, int b) {
+	public Div(int a, int b) {
 		this.a = a;
 		this.b = b;
 	}

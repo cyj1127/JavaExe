@@ -3,7 +3,7 @@ package ch09.resolve07;
 public class Sub {
 	int a, b;
 
-	public void Sub1(int a, int b) {
+	public Sub(int a, int b) {
 		this.a = a;
 		this.b = b;
 	}
