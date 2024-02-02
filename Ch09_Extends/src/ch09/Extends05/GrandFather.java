@@ -1,13 +1,13 @@
 package ch09.Extends05;
 
 public class GrandFather {
-	private int handsomeScrore;
+	private int handsomeScore;
 	
 	public GrandFather(){
 		System.out.println("GrandFather 생성자");
 	}
 	public GrandFather(int score){
-		this.handsomeScrore = score;
+		this.handsomeScore = score;
 		System.out.println("GrandFather 생성자");
 	}
 	

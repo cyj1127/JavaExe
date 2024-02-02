@@ -1,4 +1,4 @@
-package ch09.abstract10;
+package ch09.abstract11;
 
 import java.util.Scanner;
 
@@ -15,7 +15,10 @@ public class EmployeeManager {
 		System.out.println("2. 임시직");
 		System.out.println("3. 일용직");
 		System.out.println("4. 전체정보보기");
-		System.out.println("5. 종료");
+		System.out.println("5. 정규직 보기");
+		System.out.println("6. 임시직 보기");
+		System.out.println("7. 일용직 보기");
+		System.out.println("8. 종료");
 		System.out.println("번호 입력 >>");
 		int sel = sc.nextInt();
 		return sel;
@@ -72,11 +75,30 @@ public class EmployeeManager {
 		}
 		return isSave;
 	}
-
 	private void viewAllEmployeeInfo() {
 		for(int i=0;i<this.numOfEmp;i++) {
 			this.empArr[i].showEmployeeInfo();
 		}
+
+	}
+	private void RegualrEmployeeInfo() {
+		int sel = this.viewMenu();
+		for(int i=0;i<this.numOfEmp;i++) {
+			if(sel == 1){
+		this.empArr[i].showEmployeeInfo();
+			}
+		}
+	}
+
+		
+
+	private void TempEmployeeInfo() {
+		this.empArr[1].showEmployeeInfo();
+
+	}
+
+	private void PartTimeEmployeeInfo() {
+		this.empArr[2].showEmployeeInfo();
 
 	}
 
@@ -97,6 +119,15 @@ public class EmployeeManager {
 				break;
 			case EmpMenu.ALL_INFO:
 				viewAllEmployeeInfo();
+				break;
+			case EmpMenu.REG_INFO:
+				RegualrEmployeeInfo();
+				break;
+			case EmpMenu.TEMP_INFO:
+				TempEmployeeInfo();
+				break;
+			case EmpMenu.PART_INFO:
+				PartTimeEmployeeInfo();
 				break;
 			case EmpMenu.EXit:
 				emp = null;
