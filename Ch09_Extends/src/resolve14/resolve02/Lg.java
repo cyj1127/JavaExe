@@ -1,25 +1,25 @@
 package resolve14.resolve02;
 
-public class Samsung implements ITablet {
+public class Lg implements ITablet {
 
 	@Override
 	public void movie() throws InterruptedException{
-		System.out.println("Samsung - 주사율이 굉장히 높다!");
+		System.out.println("LG - 화질이 굉장히 좋다!");
 		Thread.sleep((long)(Math.random()*500) + 500);
-
 	}
 
 	@Override
 	public void music() throws InterruptedException{
-		System.out.println("Samsung - 잡음이 굉장히 없다!");
+		System.out.println("LG - 음질이 굉장히 좋다!");
 		Thread.sleep((long)(Math.random()*500) + 500);
 
 	}
 
 	@Override
 	public void readBook() throws InterruptedException {
-		System.out.println("Samsung - 밝기가 아주 적당해!");
+		System.out.println("LG - 선명도가 굉장히 좋다!");
 		Thread.sleep((long)(Math.random()*500) + 500);
+
 	}
 
 }
