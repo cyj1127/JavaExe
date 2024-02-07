@@ -2,7 +2,7 @@ package resolve14.resolve03;
 // 스트라이크, 볼을 판단하는 역할
 public class DecisionBall {
 	public static boolean decisionBall(int [] comArr, int[] userArr) {
-		boolean isGameRun = false;
+		boolean isGameRun = true;
 		String result = "";
 		
 		int strike = 0, ball = 0;

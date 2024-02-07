@@ -3,8 +3,11 @@ package ch10.collection01.ch15.sec02.exam02;
 import java.util.List;
 import java.util.Vector;
 
-import ch10.collection01.ch15.sec02.exam01.Board;
-
+/*ArrayList 와 동일하다
+ * 
+ * 다만 멀티스레드 환경에서 2개이상의 스레드가 동시접근할 때 안전하다
+ * 1개 스레드일 때는 AryyayList보다 약간 성능 저하가 있다(동기화 처리때문)
+ */
 public class VectorExample {
 	public static void main(String[] args) {
 		//Vector 컬렉션 생성

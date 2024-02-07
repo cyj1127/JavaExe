@@ -12,6 +12,11 @@ public class TabletTester {
 	}
 
 
+	public TabletTester() {
+		// TODO Auto-generated constructor stub
+	}
+
+
 	public void setTablet(ITablet tablet) {
 		this.tablet = tablet;
 	}
