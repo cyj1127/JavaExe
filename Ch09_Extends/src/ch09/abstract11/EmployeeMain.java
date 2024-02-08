@@ -1,7 +1,7 @@
 package ch09.abstract11;
 
 public class EmployeeMain {
-	public static void testTnstanceOf() {		
+	public static void testInstanceOf() {		
 		RegularEmployee regEmp = 
 				new RegularEmployee("1111","홍길동",7000,3000);
 		Employee emp = regEmp;

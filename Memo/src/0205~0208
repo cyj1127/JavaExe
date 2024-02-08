@@ -69,7 +69,7 @@
  List<String> immutableList3 = Arrays.asList(arr); 
  이런식으로 생성한다.(Arrays.asList)
  
- hashcode와 equals를 오버라이딩해서 사용하면
+ hashcode와 equals를 오버라이딩해서 사용하면+
  문자 자체를 비교하게 된다.
  toString 사용시 toString입력 후 ctrl + space 누르면 쉽게 사용 가능
  컬렉션 내부저장시 '객체'로만 저장가능하다. 그렇게되면 기본타입(primitive)로 저장이 불가.
@@ -80,4 +80,5 @@
  언박싱
  -포장객체 > 기본타입 변경
  
+ 02.08
  
