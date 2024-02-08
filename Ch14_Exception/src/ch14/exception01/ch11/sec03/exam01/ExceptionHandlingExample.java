@@ -7,7 +7,7 @@ public static void main(String[] args) {
 	
 	for(int i=0;i<=array.length;i++) {
 		try {
-			int value = Integer.parseInt(array[i]);
+			int value = Integer.parseInt(array[i]);	//Integer 로 변환해준다.
 			System.out.println("array["+i+"]:"+value);
 		}catch(ArrayIndexOutOfBoundsException e) {
 			System.out.println("배열 인덱스가 초과됨: "+e.getMessage());
