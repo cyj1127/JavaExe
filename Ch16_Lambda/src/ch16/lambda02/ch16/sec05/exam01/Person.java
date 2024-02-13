@@ -1,0 +1,10 @@
+package ch16.lambda02.ch16.sec05.exam01;
+
+import ch16.lambda02.ch16.sec04.Calcuable;
+
+public class Person {
+public void action(Calcuable calcuable) {
+	double result = calcuable.calc(10, 4);
+	System.out.println("결과" + result);
+}
+}
