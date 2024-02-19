@@ -7,6 +7,7 @@ public class BeepPrintExample {
 public static void main(String[] args) {
 	//main스레드(주인)이 work스레드(알바생)을 고용한다.
 	Thread thread = new Thread() {
+
 		
 		//알바생이 해야할 일
 		@Override
@@ -14,16 +15,18 @@ public static void main(String[] args) {
 			Toolkit toolkit = Toolkit.getDefaultToolkit();
 			for(int i=0;i<5;i++) {
 				toolkit.beep();
-				try {Thread.sleep(500);}catch(Exception e) {}
+				try{Thread.sleep(500);}catch(Exception e) {}
 			}
 		}
-	};
-	//worker스레드(알바생) 일 시작해	
-	thread.start();
-	
-	for(int i=0;i<5;i++) {
-		System.out.println("띵");
-		try {Thread.sleep(500);}catch(Exception e) {}
-	}
+
+	//worker스레드(알바생) 일 시작해
+};
+thread.start();
+
+for(int i=0;i<5;i++) {
+	System.out.println("띵");
+	try {Thread.sleep(500);}catch(Exception e) {}
 }
 }
+}
+

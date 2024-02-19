@@ -12,6 +12,7 @@ public static void main(String[] args) {
 	home.use2();
 	
 	//익명 구현 객체가 대입된 매개변수 사용
+	//실행과 동시에 선언하면서 재정의까지 할 수 있다.
 	home.use3(new RemoteControl(){
 	@Override
 	public void turnOn() {

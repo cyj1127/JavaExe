@@ -1,6 +1,9 @@
 package ch16.lambda01.ch09.sec07.exam02;
 
 public class Home {
+	//필드에 익명 구현 객체 대입
+	//RemoteControl를 상속받은 익명의 자식객체를 생성한 것이다.
+	//그와 동시에 다향성을 위해 재정의를 해준 모습이다.
 private RemoteControl rc = new RemoteControl() {
 	@Override
 	public void turnOn() {

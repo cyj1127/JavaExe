@@ -5,7 +5,7 @@ public class Computer {
 		return x + y;
 	}
 	
-	public double instanceMethid(double x, double y) {
+	public double instanceMethod(double x, double y) {
 		return x+ y;
 	}
 }
