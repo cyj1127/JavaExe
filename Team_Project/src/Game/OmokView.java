@@ -3,7 +3,7 @@ package Game;
 import java.util.Scanner;
 
 public class OmokView {
-	public static void main(String[] args) {
+	public static void main(String[] args)  {
 
 		int gameState = 0;
 		// 게임의 상태를 알려주는 변수
@@ -22,13 +22,15 @@ public class OmokView {
 		Scanner sc = new Scanner(System.in);
 
 		// 사용자의 좌표 입력 받는 메소드
+		System.out.println("===흑돌이 선공입니다===");
 		while (gameState == 0) {
 			o.viewOmok();
 			// 오폭판을 출력합니다.
 
-			System.out.println("x 좌표를 입력하세요.");
+			
+			System.out.println("<알파벳> x 좌표를 입력하세요.");
 			x = sc.next().charAt(0);
-			System.out.println("y 좌표를 입력하세요.");
+			System.out.println("<숫자> y 좌표를 입력하세요.");
 			y = sc.nextInt();
 
 			turn = (turn == 1) ? 2 : 1;

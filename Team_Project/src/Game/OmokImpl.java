@@ -34,7 +34,7 @@ public class OmokImpl {
 			System.out.print("\n");
 		}
 
-		System.out.print(" ");
+		System.out.print("  ");
 		for (int[] i : omok) {
 			numX++;
 			System.out.print("" + (char) numX);
@@ -70,14 +70,14 @@ public class OmokImpl {
 		_x = chX;
 		_y = chY;
 		count = 0;
-		while (omok[_x][_y] == turn && _x > 0) {
+		while (omok[_y][_x] == turn && _x > 0) {
 			_x--;
 		}
 		while (omok[_y][++_x] == turn && _x <= 10) {
 			count++;
 			// System.out.println(count+"오목체크");
 		}
-		if (count == 5) {
+		if (count == 4) {
 			System.out.println(name + "승리");
 			return 1;
 		}
@@ -86,14 +86,14 @@ public class OmokImpl {
 		_x = chX;
 		_y = chY;
 		count = 0;
-		while (omok[_x][_y] == turn && _y > 0) {
+		while (omok[_y][_x] == turn && _y > 0) {
 			_y--;
 		}
-		while (omok[_x][++_y] == turn && _y <= 10) {
+		while (omok[++_y][_x] == turn && _y <= 10) {
 			count++;
 			// System.out.println(count+"오목체크");
 		}
-		if (count == 5) {
+		if (count == 4) {
 			System.out.println(name + "승리");
 			return 1;
 		}
@@ -102,15 +102,15 @@ public class OmokImpl {
 		_x = chX;
 		_y = chY;
 		count = 0;
-		while (omok[_x][_y] == turn && _y > 0 && _x > 0) {
+		while (omok[_y][_x] == turn && _y > 0 && _x > 0) {
 			_y--;
 			_x--;
 		}
-		while (omok[++_x][++_y] == turn && _y <= 10 && _x <= 10) {
+		while (omok[++_y][++_x] == turn && _y <= 10 && _x <= 10) {
 			count++;
 			// System.out.println(count+"오목체크");
 		}
-		if (count == 5) {
+		if (count == 4) {
 			System.out.println(name + "승리");
 			return 1;
 		}
@@ -119,7 +119,7 @@ public class OmokImpl {
 		_x = chX;
 		_y = chY;
 		count = 0;
-		while (omok[_x][_y] == turn && _x > 0 && _y > 0) {
+		while (omok[_y][_x] == turn && _x > 0 && _y > 0) {
 			_y++;
 			_x--;
 		}
@@ -128,7 +128,7 @@ public class OmokImpl {
 			// y 값이 -1 로 음수값으로 넘어가면 오류를 출력해서 조정해 주었습니다.
 			count++;
 		}
-		if (count == 5) {
+		if (count == 4) {
 			System.out.println(name + "승리");
 			return 1;
 		}
