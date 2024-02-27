@@ -29,6 +29,7 @@ public class OmokGame {
                 }
             }
             System.out.println();
+         
         }
     }
     
